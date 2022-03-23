@@ -36,10 +36,6 @@ const StepWizard = ({steps}) => {
       setActiveStep(steps[index - 1])
     }
 
-    useEffect(() => {
-      
-    }, []);
-
     return (
       <div className="box">
         {steps.length < minimumStepCount || steps.length >= maximumStepCount ?  

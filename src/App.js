@@ -5,7 +5,7 @@ import steps from './components/StepWizard/stepsConfig'
 function App() {
   return (
     <div className="App">
-      <h4>Check out Wizard</h4>
+      <h4>MultiStep Checkout Wizard Demo</h4>
       <StepWizard steps={steps} />
     </div>
   );
