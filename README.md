@@ -31,10 +31,10 @@ For demo purpose this project is deployed on aws `S3` as a static website.
 
 # Features :
 1. Item Checkout workflow is implemented using `StepWizard` component
-2. Four step component added `StepOne` (personal information), `StepTwo` (Billing address), `StepThree` (Payment) and `FinalStep` to display all steps details together
-3. `StepWizard` componenet loads step component dynamically as per steps defined in `stepsConfig.js` file
+2. Four step components added `StepOne` (personal information), `StepTwo` (Billing address), `StepThree` (Payment) and `FinalStep` to display all steps details together
+3. `StepWizard` component loads step component dynamically as per steps defined in `stepsConfig.js` file
 4. Step component just contain form elements define with input field id and on change event
-5. `StepWizard` componenet handle input control change event and store data in central place to submit at last step
+5. `StepWizard` component handle input control change event and store data in central place to submit at last step
 6. `StepWizard` component display error message if steps are less than minimum steps or steps are more than maximum steps 
 
 # How to use step wizard
