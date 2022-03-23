@@ -4,10 +4,10 @@ import StepThree from '../StepThree';
 import FinalStep from '../FinalStep';
 
 const steps = [
-    { key: 'StepOne', label: 'Personal Information', component:StepOne },
-    { key: 'StepTwo', label: 'Billing Address', component:StepTwo},
-    { key: 'StepThree', label: 'Payment' , component:StepThree},
-    { key: 'FinalStep', label: 'Final Step', component:FinalStep}
+    { key: 'step1', label: 'Personal Information', component:StepOne},
+    { key: 'step2', label: 'Billing Address', component:StepTwo},
+    { key: 'step3', label: 'Payment' , component:StepThree},
+    { key: 'step4', label: 'Final Step', component:FinalStep}
     
   ];
 

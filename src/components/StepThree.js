@@ -5,23 +5,23 @@ const StepThree = ({formData, handleFormData}) => {
         <div>
             <div className="form-group">
                 <label htmlFor="cardName">Name on Card:</label>
-                <input type="text" className="form-control" id="cardName" value={formData?.cardName} onChange={handleFormData("cardName")} />
+                <input type="text" className="form-control" id="cardName" value={formData.cardName ? formData.cardName : "" } onChange={handleFormData("cardName")} />
             </div>
             <div className="form-group">
                 <label htmlFor="cardNumber">Credit Card Number:</label>
-                <input type="number" className="form-control" id="cardNumber" value={formData?.cardNumber} onChange={handleFormData("cardNumber")} />
+                <input type="number" className="form-control" id="cardNumber" value={formData.cardNumber ? formData.cardNumber : ""} onChange={handleFormData("cardNumber")} />
             </div>
             <div className="form-group">
                 <label htmlFor="expMonth">Exp Month:</label>
-                <input type="text" className="form-control" id="expMonth" value={formData?.expMonth} onChange={handleFormData("expMonth")} />
+                <input type="text" className="form-control" id="expMonth" value={formData.expMonth ? formData.expMonth : ""} onChange={handleFormData("expMonth")} />
             </div>
             <div className="form-group">
                 <label htmlFor="expYear">Exp Year:</label>
-                <input type="number" className="form-control" id="expYear" value={formData?.expYear} onChange={handleFormData("expYear")} />
+                <input type="number" className="form-control" id="expYear" value={formData.expYear ? formData.expYear : ""} onChange={handleFormData("expYear")} />
             </div>
             <div className="form-group">
                 <label htmlFor="cvv">CVV:</label>
-                <input type="number" className="form-control" id="cvv" value={formData?.cvv} onChange={handleFormData("cvv")} />
+                <input type="number" className="form-control" id="cvv" value={formData.cvv ? formData.cvv : "" } onChange={handleFormData("cvv")} />
             </div>
         </div>
     )

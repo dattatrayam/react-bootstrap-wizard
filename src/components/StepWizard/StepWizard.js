@@ -6,18 +6,7 @@ const StepWizard = ({steps}) => {
     const maximumStepCount =7; // maximum steps count
     const [activeStep, setActiveStep] = useState(steps[0]); // active step 
     // form data
-    const [formData, setFormData] = useState({
-      fullName: "",
-      mobileNumber: "",
-      address1: "",
-      address2: "",
-      pincode: "",
-      cardName: "",
-      cardNumber: "",
-      expMonth: "",
-      expYear: "",
-      cvv:""
-    })
+    const [formData, setFormData] = useState({})
     // function to handle input control change
     const handleInputData = (input) => e => {
       const {value } = e.target;
@@ -28,6 +17,7 @@ const StepWizard = ({steps}) => {
     }
     //function to handle next button click
     const handleNext = () => {
+      console.table( formData);
       const index = steps.findIndex(x => x.key === activeStep.key);
       //check if it is last step else increase step index by one
       if(index === steps.length-1) {
@@ -45,6 +35,10 @@ const StepWizard = ({steps}) => {
       if(index === 0) return;
       setActiveStep(steps[index - 1])
     }
+
+    useEffect(() => {
+      
+    }, []);
 
     return (
       <div className="box">
